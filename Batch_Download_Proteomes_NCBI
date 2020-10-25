@@ -1,0 +1,30 @@
+#!/usr/bin/bash
+############### Scripts: get all list of proteomes of NCBI from a ID List
+
+NCBI’s EDirect tools. EDirect is a set of tools NCBI provides to enable accessing the vast amount of information stored at NCBI from the command line.
+Here I used EDirect tools for get all proteome of text list: Genome_list_WGS.
+
+Example of head of list Genome_list18oct_WGS
+GCA_002237285.1
+GCA_002285755.1
+GCA_002302315.1
+
+## Autor: Leandro de Mattos
+#### Step1: Criar um diretório para cada Assembly ID listado em Genome_list_WGS
+###################################### criar um diretório para cada genoma e proteoma
+for i in `cat Genome_list_WGS`;
+do mkdir "$i"
+done
+
+## Step1
+
+################### Baixar todos proteomas da lista:Genome_list_WGS
+
+for i in `cat Genome_list18oct_WGS`;
+
+do cd /home/mattoslmp/Desktop/Artigo_Doutorado/NCBI/"$i"
+
+/home/mattoslmp/anaconda3/bin/esearch -db assembly -query "$i" | elink -target nuccore -name \
+        assembly_nuccore_insdc | elink -target protein | efetch -format fasta  > $i.faa
+
+done;
