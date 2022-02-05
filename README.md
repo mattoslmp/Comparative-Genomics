@@ -1,4 +1,4 @@
-### Find GENES by HMM (Hidden Markov models) profile from PFAM
+### Find proteins by Hidden Markov models from PFAM family
 ## Author: Leandro de mattos Pereira.
 - Argument 1: ids.txt
 - Argument 2: pfam_db (any name)
