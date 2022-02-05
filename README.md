@@ -7,6 +7,10 @@
 ## STEPS:
 
 - 1: The script gets each HMMM models from PFAM web database specified in the *.txt file
+     
+     A simple functionality to perform the search for each known protein family available in PFAM.
+     The ID of each family must be specified in the ids.txt file
+
 - 2: creates the database indexed
 - 3: Perform the search for the Pfam homologous in the proteome specified (path indicate: fasta file).
 ## RUN:
