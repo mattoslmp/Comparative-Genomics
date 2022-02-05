@@ -3,12 +3,10 @@
 
 ## Argument 1: 
 ## ids.txt
-## This file ids.txt in the following format
-##PFAM Accession (collum 1), name gene (Collum 2), name domain (collum 3). Column 2 and 3 can be anything but not space and characters \ or |.
-
+## This file ids.txt in the following format:
 ### Example below:
 
-*PF18320 Csc2 Csc2_Crispr*
+*PF18320\tCsc2 Csc2_Crispr*
 *PF17953 Csm4_C CRISPR_Csm4_C-terminal_domain*
 *PF18211 Csm1_B Csm1_subunit_domain_B*
 *PF19021 Cmr7A CRISPR_system_CMR_subunit_Cmr7_1*
