@@ -2,7 +2,7 @@
 ## Author: Leandro de mattos Pereira.
 - Argument 1: ids.txt
 - Argument 2: pfam_db (any name)
-- Argument 3  #pathFASTAProteome: Fasta file.
+- Argument 3: pathFASTAProteome: Fasta file.
 
 ## STEPS:
 - 1: The script gets each model PFAM of each family specified in the .txt file
