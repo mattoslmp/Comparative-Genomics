@@ -1,4 +1,4 @@
-#Cite: Autor Leandro de Mattos Pereira
+#Author: Leandro de Mattos Pereira, Computational Biology - PhD.
 #9 dezembro - 2021.
 
 #Bash script to automate the identification of genes using pfam Markov model - HMM
